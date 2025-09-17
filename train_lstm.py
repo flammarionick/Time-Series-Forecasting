@@ -31,7 +31,7 @@ def main(args):
     score = rmse(Yva, pred)
     print(f'Val RMSE: {score:.3f}')
 
-    # save a small CSV to append to your experiments table
+    
     Path('runs').mkdir(exist_ok=True)
     row = { 'window': args.window, 'units1': args.units1, 'units2': args.units2, 'dropout': args.dropout,
             'optimizer': args.optimizer, 'lr': args.lr, 'batch': args.batch,
